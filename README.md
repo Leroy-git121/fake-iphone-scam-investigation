@@ -31,16 +31,41 @@ All forensic evidence (screenshots, network captures, HTML snapshots, and IOCs) 
 
 ---
 
-## How this repo is organized (suggested)
+## How this repo is organized
 - `README.md` — overview and verdict (this file)
-- `IOC.md` — short machine-readable list of observed indicators (domains, IPs)
-- `Methodology.md` — detailed steps and OPSEC guidance
-- `REPORT_TEMPLATE.md` — copy-ready takedown/report email templates
-- `TAKEDOWN.md` — tracker for report submissions and responses
+- `IOC/` — folder with short machine-readable list of observed indicators (domains, IPs)
+- `report&takedown/` — copy-ready takedown/report email templates and tracker for report submissions and responses
 - `Evidence/` — (private) preserved artifacts for legal/takedown use
-- `Analysis/` — detailed domain reports and infra mapping
 
 ---
+# Methodology & OPSEC (detailed)
+
+## Objective
+Confirm whether the landing funnel is a scam, map its infrastructure, and collect defensible evidence for takedown and reporting.
+
+## Environment & OPSEC
+- Use isolated virtual machines (snapshots) for all interactions.
+- Use browser isolation (Firefox containers) and a VPN.
+- Do not submit real credentials or payment details; do not install unknown APKs on host OS.
+- Preserve evidence before making public disclosures.
+
+## Tools & commands used
+- DNS: `nslookup -type=ns <domain> a.root-servers.net`, `dig <domain> ANY`
+- WHOIS: `whois <domain>`
+- Network capture: `tcpdump -w capture.pcap` / Wireshark
+- HTML capture: `curl --location --output page.html "<url>"` or browser save
+- OSINT: VirusTotal, archive.org, passive DNS sources
+
+## Investigation steps
+1. **Discovery:** use bait keywords (e.g., "free iphone") to find suspect funnels.
+2. **Initial capture:** screenshot landing pages and save raw HTML/HTTP responses.
+3. **Interaction:** follow redirect chain inside the VM and log each top-level domain.
+4. **DNS & WHOIS:** enumerate name servers and registrar info (note ephemeral/no-DNS cases).
+5. **Code analysis:** extract hidden fields, forms, tel: links, and external script hosts.
+6. **Network capture:** record DNS queries and HTTP(S) redirections for timeline reconstruction.
+7. **OSINT enrichment:** check domain reputation and community reports; compute file hashes for artifacts.
+8. **Reporting:** prepare and submit abuse reports to providers and brand owners; track ticket IDs.
+
 
 ## Summary statement
 This investigation confirms the operation is a scam funnel whose goal is to harvest user information and extract affiliate revenue. Use the preserved evidence for reporting and coordinate takedown across hosting providers and brand owners.
