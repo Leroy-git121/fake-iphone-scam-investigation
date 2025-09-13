@@ -1,0 +1,13 @@
+# Takedown & reporting tracker
+
+Use this tracker to record report submissions, ticket IDs, and follow-ups.
+
+| Date (UTC) | Provider       | Method (email/form)    | Ticket ID | Status | Notes                  |
+|------------|----------------|------------------------|-----------|--------|------------------------|
+| 2025-09-13 | AWS            | Email                  |52452660072| Open   |-first to respond       |
+| 2025-09-13 | Google/Firebase| Support form / email   |           | Open   |                        |
+| 2025-09-13 | Apple          | reportphishing@apple   | not given | Open   |-second to respond      |
+
+- If no action within 72 hours, escalate with additional context and ask for case prioritization.
+
+- Use secure file-share for large evidence packages when requested.
