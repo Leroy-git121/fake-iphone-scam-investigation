@@ -1,0 +1,44 @@
+The domain name : https://freeapple-gift.web.app
+sub sections of domains that it always transfers u to : /iphone14/#undefined and /iphone14
+Site we get redirected to for supoosed prize with more phising sites: 
+
+1) https://fly.metozemoon.com/click?pid=2&offer_id=7105&sub2=u407854&sub3=cl394653&sub7=rfhttps%3A%2F%2Ffreeapple-gift.web.app%2F&sub8=rdfreeapple-gift.web.app&sub15=42be665a6b7f
+
+2) https://nl.prijzen-winnaar.com/landal?status=live&t_id=68c5053fe9b6390001d56142&aff_id=78&sub_id=&offer_id=1039
+
+their domain names : 
+
+1) nl.prijzen-winnaar.com 
+
+Ip assocatied with:  103.180.115.15
+DNS servers domain on: 
+com     nameserver = l.gtld-servers.net
+com     nameserver = j.gtld-servers.net
+com     nameserver = h.gtld-servers.net
+com     nameserver = d.gtld-servers.net
+com     nameserver = b.gtld-servers.net
+com     nameserver = f.gtld-servers.net
+com     nameserver = k.gtld-servers.net
+com     nameserver = m.gtld-servers.net
+com     nameserver = i.gtld-servers.net
+com     nameserver = g.gtld-servers.net
+com     nameserver = a.gtld-servers.net
+com     nameserver = c.gtld-servers.net
+com     nameserver = e.gtld-servers.net
+
+2) fly.metozemoon.com
+
+ Ips assocatied with :  34.91.218.141 and 35.204.100.195 
+ DNS server domain on : 
+Server:  UnKnown
+Address:  205.251.193.145
+
+fly.metozemoon.com      canonical name = adbluemedia.g2afse.com
+metozemoon.com  nameserver = ns-1352.awsdns-41.org
+metozemoon.com  nameserver = ns-2010.awsdns-59.co.uk
+metozemoon.com  nameserver = ns-401.awsdns-50.com
+metozemoon.com  nameserver = ns-810.awsdns-37.net
+
+
+shaddy link : https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_74822ab2-0b7b-46a9-ba3e-f65d1536048a
+

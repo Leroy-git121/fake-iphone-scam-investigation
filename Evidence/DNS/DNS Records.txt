@@ -1,0 +1,71 @@
+┌──(root㉿OVERCLOCK)-[~]
+└─# nslookup freeapple-gift.web.app                                                    
+Server:         10.2.0.1
+Address:        10.2.0.1#53
+
+Non-authoritative answer:
+Name:   freeapple-gift.web.app
+Address: 199.36.158.100
+Name:   freeapple-gift.web.app
+Address: 2620:0:890::100
+
+No DNS record of this site also proven by visual evidence: ┌──(root㉿OVERCLOCK)-[~]
+└─# nslookup -type=NS app. g.root-servers.net
+Server:         g.root-servers.net
+Address:        192.112.36.4#53
+
+Non-authoritative answer:
+*** Can't find app.: No answer
+
+Authoritative answers can be found from:
+app     nameserver = ns-tld3.charlestonroadregistry.com.
+app     nameserver = ns-tld5.charlestonroadregistry.com.
+app     nameserver = ns-tld1.charlestonroadregistry.com.
+app     nameserver = ns-tld2.charlestonroadregistry.com.
+app     nameserver = ns-tld4.charlestonroadregistry.com.
+ns-tld5.charlestonroadregistry.com      internet address = 216.239.60.105
+ns-tld4.charlestonroadregistry.com      internet address = 216.239.38.105
+ns-tld3.charlestonroadregistry.com      internet address = 216.239.36.105
+ns-tld2.charlestonroadregistry.com      internet address = 216.239.34.105
+ns-tld1.charlestonroadregistry.com      internet address = 216.239.32.105
+ns-tld5.charlestonroadregistry.com      has AAAA address 2001:4860:4805::69
+ns-tld4.charlestonroadregistry.com      has AAAA address 2001:4860:4802:38::69
+ns-tld3.charlestonroadregistry.com      has AAAA address 2001:4860:4802:36::69
+ns-tld2.charlestonroadregistry.com      has AAAA address 2001:4860:4802:34::69
+ns-tld1.charlestonroadregistry.com      has AAAA address 2001:4860:4802:32::69
+
+
+┌──(root㉿OVERCLOCK)-[~]
+└─# nslookup -type=NS web.app. ns-tld3.charlestonroadregistry.com.
+Server:         ns-tld3.charlestonroadregistry.com.
+Address:        216.239.36.105#53
+
+Non-authoritative answer:
+*** Can't find web.app.: No answer
+
+Authoritative answers can be found from:
+web.app nameserver = ns4.googledomains.com.
+web.app nameserver = ns1.googledomains.com.
+web.app nameserver = ns3.googledomains.com.
+web.app nameserver = ns2.googledomains.com.
+
+
+FOR METOZEMOON.COM: 
+metozemoon.com  nameserver = ns-1352.awsdns-41.org
+metozemoon.com  nameserver = ns-2010.awsdns-59.co.uk
+metozemoon.com  nameserver = ns-401.awsdns-50.com
+metozemoon.com  nameserver = ns-810.awsdns-37.net
+
+FOR THE PRIJZEN-WINNAAR.COM: 
+com     nameserver = l.gtld-servers.net
+com     nameserver = j.gtld-servers.net
+com     nameserver = h.gtld-servers.net
+com     nameserver = d.gtld-servers.net
+com     nameserver = b.gtld-servers.net
+com     nameserver = f.gtld-servers.net
+com     nameserver = k.gtld-servers.net
+com     nameserver = m.gtld-servers.net
+com     nameserver = i.gtld-servers.net
+com     nameserver = g.gtld-servers.net
+com     nameserver = a.gtld-servers.net
+com     nameserver = c.gtld-servers.net
