@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="39341fb9-ce5b-4752-82dd-b0776d58b13e" last-modified="2025-09-16T23:00:00" xmlns="http://schemas.mandiant.com/2010/ioc">
+  <short_description>freeapple-gift.web.app</short_description>
+  <description>Network related IOC for fake apple giveaway site</description>
+  <authored_by>Leroy Ananad</authored_by>
+  <authored_date>2025-09-16T23:00:00</authored_date>
+  <links />
+  <definition>
+    <Indicator operator="OR" id="ind-freeapple">
+      <IndicatorItem id="dns-freeapple" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir" />
+        <Content type="string">freeapple-gift.web.app</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ip-freeapple" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/RecordData/IPv4Address" type="mir" />
+        <Content type="IP">199.36.158.100</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>
